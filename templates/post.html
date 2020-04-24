@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block head%}
+	<title>Post</title>
+{% endblock %}
+	
+{% block body%}
+
+<form action="/posts" method= 'POST'>
+
+	<br>
+     <input class="form-control" type="text" placeholder="Title" aria-label="Search" name="title" id = 'title'>
+     <br>
+     <textarea class="form-control" id="content" name="content" placeholder="Post" rows="3" type= "text"></textarea>
+     <br>
+     <input class="form-control" type="text" placeholder="Your Name" aria-label="Search" name = author id = 'author'>
+     <br>
+     <input class = "btn btn-success" type="submit" value="Post">
+</form>
+
+
+{% endblock %}
